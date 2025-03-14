@@ -40,8 +40,8 @@ ng serve
 ```
 or
 ```bash
-  npm run start -->
-```
+  npm run start
+``` -->
 
 Quando o servidor estiver funcionando, abra o seu browser e navegue até `http://localhost:4200/`.  A aplicação será recarregada automaticamente sempre que modificar algum dos ficheiros de origem.
 
