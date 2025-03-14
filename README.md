@@ -1,6 +1,6 @@
-<p align="center">
+<!-- <p align="center">
 <img src="/assets/images/logo.png" alt="Logo do projeto" title="Promoção CIMED" width="182" style="margin: 30px auto; display: block;">
-</p>
+</p> -->
 <h1 align="center">Projeto WEB</h1>
 <div align="center">
 Dependências e requisitos utilizados para este projeto:
