@@ -25,23 +25,52 @@ Este projeto foi feito usando [LINGUAGEM](https://www.google.com/) version 00.0.
 └── master (production)
 ```
 
-# 📑 Install dependencies
+# 💡 Comandos git
 
+### Clonar o repositorio
 ```bash
-  npm i
+git clone https://github.com/felixAmandy/commands_git.git
+# ou se estiver utilizando chave SSH
+git clone git@github.com:felixAmandy/commands_git.git
 ```
 
-<!-- # 📑 Development server
-
-To start a local development server, run:
-
+### Listar as branches
 ```bash
-ng serve
+git branch
+# para atualizar as referências remotas do seu repositório local use:
+git fetch --all
 ```
-or
+
+### Navegar pelas branchs
 ```bash
-  npm run start
-``` -->
+# sendo NAME o nome da branch q você quer ir
+git checkout NAME
+```
+
+### Adicionar suas alteraçoes na staging area
+```bash
+# '.' podendo ser tbm o nome do arquivo, o '.' seria tudo
+git add . 
+```
+
+### Salvar suas alterações na staging area
+```bash
+# MSG sendo sua mensagem
+git commit -m "MSG"
+```
+
+### Salvar/add suas alterações ao repositorio
+```bash
+# NAME sendo o nome da branch q você quer enviar as suas alterações
+git push -u origin NAME 
+```
+
+### Buscar as alterações do repositorio
+```bash
+# NAME sendo o nome da branch q você quer obter as alterações
+git pull origin NAME
+```
+
 
 Quando o servidor estiver funcionando, abra o seu browser e navegue até `http://localhost:4200/`.  A aplicação será recarregada automaticamente sempre que modificar algum dos ficheiros de origem.
 
