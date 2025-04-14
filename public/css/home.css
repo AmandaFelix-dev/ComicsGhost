@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Box principal */
+.form-box {
+    background-color: white;
+    max-height: 700px;
+    min-height: 600px;
+    width: 100%;
+}
+
+/* Logo no topo do formulário */
+.logo {
+    width: 180px;
+}
+
+/* Imagem do lado direito */
+.bg-img {
+    background-image: url("/assets/image/JovensTitasCADASTRO.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    border-radius: 0 12px 12px 0;
+}
+
+/* Rodapé */
+footer a img {
+    margin-top: 8px;
+    transition: transform 0.3s ease;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
