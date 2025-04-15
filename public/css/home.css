@@ -1,36 +1,121 @@
+/* ===== Reset & Base ===== */
 body {
     background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Box principal */
-.form-box {
-    background-color: white;
-    max-height: 700px;
-    min-height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* ===== Layout Principal ===== */
+  .layout-wrapper {
+    max-width: 1050px;
+    height: 565px;
+    margin: 122px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* ===== Navbar ===== */
+  header.navbar-custom {
     width: 100%;
-}
-
-/* Logo no topo do formulário */
-.logo {
+    max-width: 1439px;
+    height: 78px;
+    background-color: white;
+    border-bottom: 1px solid #dee2e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    z-index: 10;
+  }
+  
+  .navbar-custom img.logo-ghost {
+    height: 40px;
+  }
+  
+  /* ===== Caixa do Formulário ===== */
+  .form-box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-section .logo {
     width: 180px;
-}
-
-/* Imagem do lado direito */
-.bg-img {
-    background-image: url("/assets/image/JovensTitasCADASTRO.png");
+    margin-bottom: 20px;
+  }
+  
+  /* ===== Imagem Lateral ===== */
+  .bg-img {
+    width: 520px;
+    height: 100%;
+    background-image: url('/assets/image/JovensTitasCADASTRO.png');
     background-size: cover;
     background-position: center;
-    min-height: 100%;
     border-radius: 0 12px 12px 0;
-}
-
-/* Rodapé */
-footer a img {
-    margin-top: 8px;
+  }
+  
+  /* ===== Botões do Formulário ===== */
+  .form-section .btn {
+    font-size: 1rem;
+    height: 48px;
+    border-radius: 10px;
+  }
+  
+  .form-section .btn-outline-dark {
+    border: 2px solid #343a40;
+    font-weight: 500;
+  }
+  
+  .form-section .btn-dark {
+    background-color: #000;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ===== Rodapé ===== */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-content {
+    font-size: 0.9rem;
+    color: #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content span {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .footer-content img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
     transition: transform 0.3s ease;
-}
-
-footer a img:hover {
+    cursor: pointer;
+  }
+  
+  .footer-content img:hover {
     transform: scale(1.1);
-}
+  }
+  
