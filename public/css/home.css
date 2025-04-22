@@ -1,6 +1,6 @@
 /* ===== Reset & Base ===== */
 body {
-  background-color: #f8f9fa;
+  background-color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
 .layout-wrapper {
   max-width: 1050px;
   height: 565px;
-  margin: 122px auto 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,8 +44,8 @@ header.navbar-custom {
   display: flex;
   width: 100%;
   min-height: 560px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 20px; */
   overflow: hidden;
   background-color: white;
 }
@@ -53,6 +53,7 @@ header.navbar-custom {
 .form-section {
   flex: 1;
   padding: 10px;
+  padding-right: 40px;
   background-color: white;
 }
 
@@ -63,7 +64,7 @@ header.navbar-custom {
   background-image: url('/assets/image/JovensTitasCADASTRO.png');
   background-size: cover;
   background-position: center;
-  border-radius: 0 12px 12px 0;
+  border-radius: 20px;
 }
 
 /* ===== Botões do Formulário ===== */
@@ -81,7 +82,7 @@ header.navbar-custom {
 .form-section .btn-dark {
   background-color: #000;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 /* ===== Rodapé ===== */

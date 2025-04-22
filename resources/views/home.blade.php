@@ -13,7 +13,7 @@
 <body>
 
 <!-- Navbar -->
-<header class="navbar-custom">
+<!-- <header class="navbar-custom">
   <div class="d-flex align-items-center gap-2">
     <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Ícone ComicsGhost" class="logo-ghost">
     <span class="fs-4 fw-semibold ms-2">ComicsGhost</span>
@@ -26,7 +26,7 @@
   </nav>
 
   <button class="btn btn-outline-secondary rounded-pill px-4">Entrar →</button>
-</header>
+</header> -->
 
 <!-- Conteúdo principal -->
 <main class="layout-wrapper">
@@ -35,21 +35,21 @@
     <!-- Formulário -->
     <div class="form-section">
       <h2 class="fw-bold mb-3 wix-madefor-display-hero-title">Cadastro de usuário</h2>
-      <p class="text-muted mb-4">Preencha seus dados para criar uma conta</p>
+      <p class="text-muted mb-4 pb-4">Preencha seus dados para criar uma conta</p>
 
       <form action="/cadastro" method="POST">
         @csrf
-        <div class="mb-3">
+        <div class="mb-4">
           <label for="username" class="fw-bold mb-2 wix-madefor-display-hero-title">Nome de usuário</label>
-          <input type="text" class="form-control" id="username" name="username" placeholder="Digite seu nome de usuário">
+          <input type="text" required class="form-control" id="username" name="username" placeholder="Digite seu nome de usuário">
         </div>
-        <div class="mb-3">
+        <div class="mb-4">
           <label for="email" class="fw-bold mb-2 wix-madefor-display-hero-title">Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu endereço de e-mail">
+          <input type="email" required class="form-control" id="email" name="email" placeholder="Digite seu endereço de e-mail">
         </div>
-        <div class="mb-3">
+        <div class="mb-4">
           <label for="senha" class="fw-bold mb-2 wix-madefor-display-hero-title">Senha</label>
-          <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
+          <input type="password" required class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
           <small class="text-muted">A senha deve ter pelo menos 8 caracteres</small>
         </div>
         <div class="d-flex gap-3 mt-4">
@@ -65,14 +65,14 @@
 </main>
 
 <!-- Rodapé -->
-<footer class="text-center mt-5">
+<!-- <footer class="text-center mt-5 pb-4">
   <div class="footer-content d-flex justify-content-center align-items-center">
     <span>© Time unides7 2025</span>
     <a href="https://github.com/seu-usuario" target="_blank">
       <img src="{{ asset('assets/image/githubicon.png') }}" alt="GitHub" class="ms-2" />
     </a>
   </div>
-</footer>
+</footer> -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{ asset('js/home.js') }}"></script>
