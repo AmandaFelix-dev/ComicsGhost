@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/cadastro', function () {
     return view('register');
 });
+Route::get('/Perfil', function () {
+    return view('userprofile');
+});
