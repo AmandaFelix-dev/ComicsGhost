@@ -8,3 +8,7 @@ Route::get('/', function () {
 Route::get('/cadastro', function () {
     return view('register');
 });
+
+Route::get('/', function () {
+    return view('categories');
+});
