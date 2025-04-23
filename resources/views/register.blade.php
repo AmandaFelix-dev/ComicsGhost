@@ -34,7 +34,7 @@
 
     <!-- Formulário -->
     <div class="form-section">
-      <h2 class="fw-bold mb-3 wix-madefor-display-hero-title">TESTEEE</h2>
+      <h2 class="fw-bold mb-3 wix-madefor-display-hero-title">Cadastro de usuário</h2>
       <p class="text-muted mb-4 pb-4">Preencha seus dados para criar uma conta</p>
 
       <form action="/cadastro" method="POST">
@@ -75,6 +75,6 @@
 </footer> -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="{{ asset('js/home.js') }}"></script>
+<script src="{{ asset('js/register.js') }}"></script>
 </body>
 </html>

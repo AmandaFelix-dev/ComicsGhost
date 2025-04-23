@@ -3,78 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cadastro</title>
+  <title>ComicsGhost - Página Inicial</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="{{ asset('css/register.css') }}" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+  <link href="{{ asset('css/home.css') }}" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Wix Madefor Display', sans-serif;">
 
-<!-- Navbar -->
-<!-- <header class="navbar-custom">
-  <div class="d-flex align-items-center gap-2">
-    <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Ícone ComicsGhost" class="logo-ghost">
-    <span class="fs-4 fw-semibold ms-2">ComicsGhost</span>
+  <!-- Banner de Topo -->
+  <header>
+    <div style="background: url('{{ asset('assets/image/home/banner-hq.png') }}') no-repeat center center; background-size: cover; height: 300px;"></div>
+  </header>
+
+  <!-- Destaques -->
+  <section class="text-center py-5 container">
+    <h2 class="fw-bold mb-3">Destaques</h2>
+    <p class="text-muted mb-4">Confira as HQs que estão sendo mais comentadas nos últimos tempos!<br> Seja por revivals dos clássicos, entre renascimentos ou polêmicas, confira elas:</p>
+
+    <div id="carouselExampleCaptions" class="container carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/image/home/carousel/Invincible-banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/image/home/carousel/Batman-banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/image/home/carousel/X-man-97-banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
   </div>
+  </section>
 
-  <nav class="d-none d-md-flex gap-4 text-secondary fw-bold wix-madefor-display-hero-title">
-    <a href="#" class="text-decoration-none text-dark px-2">Gêneros</a>
-    <a href="#" class="text-decoration-none text-dark px-2">Itens em Destaque</a>
-    <a href="#" class="text-decoration-none text-dark px-2">Todos os Itens</a>
-  </nav>
+  <!-- Todos -->
+  <section class="container py-2">
+    
+  <section class="pb-5">
+    <h2 class="fw-bold mb-4 text-center">Todos</h2>
+    <p class="text-muted mb-5 text-center">Confira nossas edições!</p>
 
-  <button class="btn btn-outline-secondary rounded-pill px-4">Entrar →</button>
-</header> -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 gx-5 justify-content-center">
 
-<!-- Conteúdo principal -->
-<main class="layout-wrapper">
-  <div class="form-box">
-
-    <!-- Formulário -->
-    <div class="form-section">
-      <h2 class="fw-bold mb-3 wix-madefor-display-hero-title">Cadastro de usuário</h2>
-      <p class="text-muted mb-4 pb-4">Preencha seus dados para criar uma conta</p>
-
-      <form action="/cadastro" method="POST">
-        @csrf
-        <div class="mb-4">
-          <label for="username" class="fw-bold mb-2 wix-madefor-display-hero-title">Nome de usuário</label>
-          <input type="text" required class="form-control" id="username" name="username" placeholder="Digite seu nome de usuário">
+      <div class="col-md-6 col-lg-6">
+        <div class="d-flex bg-light rounded shadow-sm p-3 h-100">
+          <img src="{{ asset('assets/image/home/hqs/hq1.png') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
+          <div class="d-flex flex-column justify-content-between">
+            <div>
+              <h6 class="fw-bold mb-1">Invincible #144</h6>
+              <p class="text-muted mb-2">The end of all things</p>
+              <span class="badge bg-primary me-1">Ação</span>
+            </div>
+            <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+          </div>
         </div>
-        <div class="mb-4">
-          <label for="email" class="fw-bold mb-2 wix-madefor-display-hero-title">Email</label>
-          <input type="email" required class="form-control" id="email" name="email" placeholder="Digite seu endereço de e-mail">
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="d-flex bg-light rounded shadow-sm p-3 h-100">
+          <img src="{{ asset('assets/image/home/hqs/hq2.png') }}" alt="HQ2" class="img-fluid me-3 rounded" style="width: 120px;">
+          <div class="d-flex flex-column justify-content-between">
+            <div>
+              <h6 class="fw-bold mb-1">X-Men '97</h6>
+              <p class="text-muted mb-2">Grandes X-Pectativas</p>
+              <span class="badge bg-info me-1">Drama</span>
+              <span class="badge bg-warning text-dark me-1">Fantasia</span>
+            </div>
+            <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+          </div>
         </div>
-        <div class="mb-4">
-          <label for="senha" class="fw-bold mb-2 wix-madefor-display-hero-title">Senha</label>
-          <input type="password" required class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
-          <small class="text-muted">A senha deve ter pelo menos 8 caracteres</small>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="d-flex bg-light rounded shadow-sm p-3 h-100">
+          <img src="{{ asset('assets/image/home/hqs/hq3.png') }}" alt="HQ3" class="img-fluid me-3 rounded" style="width: 120px;">
+          <div class="d-flex flex-column justify-content-between">
+            <div>
+              <h6 class="fw-bold mb-1">Homem-Aranha 2099</h6>
+              <p class="text-muted mb-2">A volta do futuro</p>
+              <span class="badge bg-success me-1">Ficção</span>
+            </div>
+            <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+          </div>
         </div>
-        <div class="d-flex gap-3 mt-4">
-          <button type="reset" class="btn btn-outline-dark w-50">Cancelar</button>
-          <button type="submit" class="btn btn-dark w-50 fw-semibold">Inscrever-se</button>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="d-flex bg-light rounded shadow-sm p-3 h-100">
+          <img src="{{ asset('assets/image/home/hqs/hq4.png') }}" alt="HQ4" class="img-fluid me-3 rounded" style="width: 120px;">
+          <div class="d-flex flex-column justify-content-between">
+            <div>
+              <h6 class="fw-bold mb-1">Capitão América: Renascimento</h6>
+              <p class="text-muted mb-2">O retorno do herói</p>
+              <span class="badge bg-danger me-1">Heróis</span>
+              <span class="badge bg-secondary me-1">Clássico</span>
+            </div>
+            <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+          </div>
         </div>
-      </form>
+      </div>
     </div>
 
-    <!-- Imagem lateral -->
-    <div class="bg-img"></div>
+  <!-- Botão final -->
+  <div class="mt-5 text-center">
+    <a href="#" class="btn btn-dark px-4">Listar todos HQs <span class="ms-1">▼</span></a>
   </div>
-</main>
+</section>
 
-<!-- Rodapé -->
-<!-- <footer class="text-center mt-5 pb-4">
-  <div class="footer-content d-flex justify-content-center align-items-center">
-    <span>© Time unides7 2025</span>
-    <a href="https://github.com/seu-usuario" target="_blank">
-      <img src="{{ asset('assets/image/githubicon.png') }}" alt="GitHub" class="ms-2" />
-    </a>
-  </div>
-</footer> -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="{{ asset('js/home.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
