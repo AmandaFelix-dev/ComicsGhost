@@ -9,7 +9,7 @@ Route::get('/cadastro', function () {
     return view('register');
 });
 
-Route::get('/', function () {
+Route::get('/generos', function () {
     return view('categories');
 });
 Route::get('/Perfil', function () {
