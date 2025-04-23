@@ -12,3 +12,6 @@ Route::get('/cadastro', function () {
 Route::get('/', function () {
     return view('categories');
 });
+Route::get('/Perfil', function () {
+    return view('userprofile');
+});
