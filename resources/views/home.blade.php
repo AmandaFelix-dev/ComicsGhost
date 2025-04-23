@@ -75,7 +75,7 @@
           <img src="{{ asset('assets/image/home/hqs/hq1.png') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex flex-column justify-content-between">
             <div>
-              <h6 class="fw-bold mb-1">Invincible #144</h6>
+              <h5 class="fw-bold mb-1">Invincible #144</h5>
               <p class="text-muted mb-2">The end of all things</p>
               <span class="badge bg-primary me-1">Ação</span>
             </div>
@@ -89,7 +89,7 @@
           <img src="{{ asset('assets/image/home/hqs/hq2.png') }}" alt="HQ2" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex flex-column justify-content-between">
             <div>
-              <h6 class="fw-bold mb-1">X-Men '97</h6>
+              <h5 class="fw-bold mb-1">X-Men '97</h5>
               <p class="text-muted mb-2">Grandes X-Pectativas</p>
               <span class="badge bg-info me-1">Drama</span>
               <span class="badge bg-warning text-dark me-1">Fantasia</span>
@@ -104,7 +104,7 @@
           <img src="{{ asset('assets/image/home/hqs/hq3.png') }}" alt="HQ3" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex flex-column justify-content-between">
             <div>
-              <h6 class="fw-bold mb-1">Homem-Aranha 2099</h6>
+              <h5 class="fw-bold mb-1">Homem-Aranha 2099</h5>
               <p class="text-muted mb-2">A volta do futuro</p>
               <span class="badge bg-success me-1">Ficção</span>
             </div>
@@ -118,7 +118,7 @@
           <img src="{{ asset('assets/image/home/hqs/hq4.png') }}" alt="HQ4" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex flex-column justify-content-between">
             <div>
-              <h6 class="fw-bold mb-1">Capitão América: Renascimento</h6>
+              <h5 class="fw-bold mb-1">Capitão América: Renascimento</h5>
               <p class="text-muted mb-2">O retorno do herói</p>
               <span class="badge bg-danger me-1">Heróis</span>
               <span class="badge bg-secondary me-1">Clássico</span>
