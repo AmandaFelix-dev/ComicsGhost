@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lista de Favoritos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="{{ asset('css/userprofile.css') }}" rel="stylesheet">
 </head>
 <body style="background-color: #f9f9f9;">
 
@@ -30,7 +32,7 @@
   <!-- Header do usuário -->
   <section class="bg-secondary text-white py-4">
     <div class="container d-flex align-items-center">
-      <img src="avatar.png" alt="Avatar" class="rounded-circle me-3" width="60" height="60">
+      <img src="{{ asset('assets/image/perfil.png') }}" alt="Avatar" class="rounded-circle me-3" width="60" height="60">
       <div>
         <h5 class="mb-0">Usuário</h5>
         <small>email@gmail.com</small>
@@ -38,45 +40,65 @@
     </div>
   </section>
 
+  
   <!-- Conteúdo principal -->
-  <main class="container py-5">
-    <h3 class="fw-bold mb-2">Lista de Favoritos</h3>
-    <p class="text-muted mb-4">Esta seção é nosso cantinho preferido. Qual vai ser a sua próxima obsessão?</p>
-
-    <div class="d-flex flex-wrap justify-content-start gap-4">
-      <!-- Card 1 -->
-      <div class="card" style="width: 14rem;">
-        <img src="invincible.jpg" class="card-img-top" alt="Invincible">
-        <div class="card-body">
-          <h6 class="card-title fw-bold mb-1">Invincible #144</h6>
-          <p class="card-text small">The end of all things</p>
-          <span class="badge bg-primary mb-2">Ação</span><br>
-          <a href="#" class="btn btn-danger btn-sm">Veja mais</a>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="card" style="width: 14rem;">
-        <img src="spiderman.jpg" class="card-img-top" alt="Spider-Man">
-        <div class="card-body">
-          <h6 class="card-title fw-bold mb-1">Spider-Man: Miles Morales #1</h6>
-          <span class="badge bg-primary me-1">Ação</span>
-          <span class="badge bg-info text-dark">Aventura</span><br>
-          <a href="#" class="btn btn-danger btn-sm mt-2">Veja mais</a>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="card" style="width: 14rem;">
-        <img src="flash.jpg" class="card-img-top" alt="Flash">
-        <div class="card-body">
-          <h6 class="card-title fw-bold mb-1">Flash: Rebirth</h6>
-          <span class="badge bg-warning text-dark">Velocidade</span><br>
-          <a href="#" class="btn btn-danger btn-sm mt-2">Veja mais</a>
-        </div>
+  <div class="d-flex flex-wrap justify-content-start gap-4">
+    <main class="container py-5">
+      <h3 class="fw-bold mb-2">Lista de Favoritos</h3>
+      <p class="text-muted mb-4">Esta seção é nosso cantinho preferido. Qual vai ser a sua próxima obsessão?</p>
+    </div>
+    <!-- Botões -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHqs" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHqs" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
     </div>
-  </main>
+  </section>
+<!-- Item 1 -->
+<div class="carousel-item active">
+          <div class="card d-flex flex-row align-items-center p-3 mx-auto" style="max-width: 700px;">
+            <img src="{{ asset('assets/image/home/hqs/hq1.png') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 150px;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Invincible #144</h5>
+              <p class="card-text">The end of all things</p>
+              <span class="badge bg-primary me-2">Ação</span>
+              <a href="#" class="btn btn-danger">Veja mais</a>
+            </div>
+          </div>
+        </div>
+<!-- Item 2 -->
+        <div class="carousel-item">
+          <div class="card d-flex flex-row align-items-center p-3 mx-auto" style="max-width: 700px;">
+            <img src="{{ asset('assets/image/home/hqs/hq4.png') }}" alt="HQ4" class="img-fluid me-3 rounded" style="width: 120px;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Spider-Man: Miles Morales #1</h5>
+              <p class="card-text">Miles Morales #1</p>
+              <span class="badge bg-primary me-2">Ação</span>
+              <span class="badge bg-secondary me-2">Aventura</span>
+              <a href="#" class="btn btn-danger">Veja mais</a>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="carousel-item">
+          <div class="card d-flex flex-row align-items-center p-3 mx-auto" style="max-width: 700px;">
+            <img src="{{ asset('assets/image/home/hqs/hq6.png') }}" alt="HQ6" class="img-fluid me-3 rounded" style="width: 120px;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Flash #3</h5>
+              <p class="card-text">Gorilla Warfare</p>
+              <span class="badge bg-primary me-2">Ação</span>
+              <span class="badge bg-secondary me-2">Aventura</span>
+              <a href="#" class="btn btn-danger">Veja mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
   <!-- Rodapé -->
   <footer class="text-center py-4">
