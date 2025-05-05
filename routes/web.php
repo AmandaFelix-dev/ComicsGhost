@@ -15,3 +15,8 @@ Route::get('/generos', function () {
 Route::get('/perfil', function () {
     return view('userprofile');
 });
+
+Route::get('/hq', function () {
+    return view('comic');
+});
+
