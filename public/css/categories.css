@@ -38,4 +38,12 @@ body {
   .carousel-inner > .hq-card {
     scroll-snap-align: start;
   }
+
+  .banner-img {
+    width: 520px;
+    height: 408px;
+    object-fit: cover; /* garante que a imagem preencha a área */
+  }
+  
+  
   

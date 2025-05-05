@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Categorias | ComicsGhost</title>
+    <!-- Bootstrap & Estilos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="{{ asset('css/categories.css') }}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;700&display=swap "rel="stylesheet">
@@ -39,7 +40,6 @@
 
 <!-- Banner -->
 <div class="container py-5">
-  <!-- Banner Principal -->
   <div class="row align-items-center mb-5">
     <div class="col-md-6 text-start">
       <h1 class="fw-bold">Descubra histórias que combinam com seu estilo!</h1>
@@ -53,11 +53,11 @@
       </button>
     </div>
     <div class="col-md-6 text-center">
-    <img src="{{ asset('assets/image/joventitasbanner.png') }}" alt="Banner Joventitas" class="img-fluid rounded shadow">
+    <img src="{{ asset('assets/image/jovenstitasbanner.png') }}" alt="Banner Joventitas" class="banner-img rounded shadow">
     </div>
   </div>
-
-<!-- Categoria -->
+  
+<!-- Carrossel de HQs -->
 <div id="carouselHqs" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
@@ -92,7 +92,7 @@
 
   </div>
 
-  <!-- Botões de navegação -->
+  <!-- Botões de navegação - carousel -->
    <div></div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselHqs" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
