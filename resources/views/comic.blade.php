@@ -8,8 +8,6 @@
   <link href="{{ asset('css/comic.css') }}" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Navbar -->
  
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
@@ -75,7 +73,7 @@
           <span class="fs-4">📌</span> Onde Comprar
         </h5>
         <p class="mb-1">Amazon</p>
-        <a href="#" class="text-decoration-none">Link</a>
+        <a href="https://www.amazon.com/Miles-Morales-Homem-Aranha-vol-Portuguese-ebook/dp/B08X8R6P3W?utm_source=chatgpt.com" class="text-decoration-none">Link</a>
         <p class="mt-3 mb-1">Reboot</p>
         <a href="#" class="text-decoration-none">Link</a>
       </div>

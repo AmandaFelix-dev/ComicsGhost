@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Wix Madefor Display', sans-serif;
   background-color: #f8f9fa;
@@ -66,4 +70,11 @@ body {
 }
 
 
+.btn-danger {
+  background-color: #E50914; /* ou outro vermelho mais escuro */
+  border: none;
+}
+.badge.bg-primary { background-color: #007BFF; } /* Ação */
+.badge.bg-secondary { background-color: #6C757D; } /* Suspense */
+.badge.bg-warning.text-dark { background-color: #FFC107; } /* Drama */
 
