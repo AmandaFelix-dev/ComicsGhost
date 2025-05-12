@@ -1,10 +1,5 @@
-body {
-    font-family: 'Wix Madefor Display', sans-serif;
-    background-color: #f8f9fa;
-  }
-  
-  .logo-ghost {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+* {
+  font-family: 'Wix Madefor Display', sans-serif;
+}

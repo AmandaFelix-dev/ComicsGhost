@@ -6,30 +6,11 @@
   <title>ComicsGhost | HQ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link href="{{ asset('css/comic.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-
-  <!-- Navbar -->
- 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
-  <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-    <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Logo" class="logo-ghost">
-    <span class="fw-bold">ComicsGhost</span>
-  </a>
-  <div class="collapse navbar-collapse justify-content-center">
-    <ul class="navbar-nav gap-4">
-      <li class="nav-item"><a class="nav-link text-dark" href="#">Gêneros</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#">Itens em Destaque</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#">Todos os Itens</a></li>
-    </ul>
-  </div>
-  <button class="btn btn-outline-dark rounded-pill">Entrar →</button>
-</nav>
-
-
   <!-- Conteúdo principal -->
-  <div class="container my-5">
+  <div class="container my-5 w-100">
     <div class="row align-items-start">
       
       <!-- Capa da HQ -->
@@ -71,27 +52,20 @@
     <!-- Onde Comprar -->
     <div class="row mt-5">
       <div class="col">
-        <h5 class="mb-3">
-          <span class="fs-4">📌</span> Onde Comprar
+        <h4 class="mb-3">
+          <b><span class="fs-4">📌</span> Onde Comprar</b>
         </h5>
         <p class="mb-1">Amazon</p>
-        <a href="#" class="text-decoration-none">Link</a>
-        <p class="mt-3 mb-1">Reboot</p>
-        <a href="#" class="text-decoration-none">Link</a>
+        <a href="#" target="_blank" class="text-decoration-none text-secondary">Link</a>
+        
+        <hr class="my-3 w-50">
+        
+        <p class="mb-1">Reboot</p>
+        <a href="#" target="_blank" class="text-decoration-none text-secondary">Link</a>
       </div>
     </div>
-  </div>
 
-  <!-- Rodapé -->
-<!-- <footer class="text-center mt-5 pb-4">
-  <div class="footer-content d-flex justify-content-center align-items-center">
-    <span>© Time unides7 2025</span>
-    <a href="https://github.com/seu-usuario" target="_blank">
-      <img src="{{ asset('assets/image/githubicon.png') }}" alt="GitHub" class="ms-2" />
-    </a>
   </div>
-</footer> -->
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

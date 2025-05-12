@@ -1,6 +1,7 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+* {
   font-family: 'Wix Madefor Display', sans-serif;
-  background-color: #f8f9fa;
 }
 
 .logo-ghost {
@@ -48,13 +49,16 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   opacity: 10;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* sombra suave */
   display: flex;
   align-items: center;
   justify-content: center;
   top: 50%;
-  position: absolute; /* Isso garante o posicionamento correto */
-  z-index: 1; /* Para garantir que fiquem acima do conteúdo */
+  position: absolute;
+  /* Isso garante o posicionamento correto */
+  z-index: 1;
+  /* Para garantir que fiquem acima do conteúdo */
 }
 
 .carousel-control-prev-icon,
@@ -62,8 +66,6 @@ body {
   background-size: 60% 60%;
   background-position: center;
   background-repeat: no-repeat;
-  filter: invert(0.7); /* deixa a seta mais escura para combinar com fundo claro */
+  filter: invert(0.7);
+  /* deixa a seta mais escura para combinar com fundo claro */
 }
-
-
-
