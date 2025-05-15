@@ -15,30 +15,32 @@
       
       <!-- Capa da HQ -->
       <div class="col-md-4 text-center">
-      <img src="{{ asset('assets/image/home/hqs/hq4.png') }}" alt="HQ4"class="img-fluid rounded shadow">
+        <!-- Usando o caminho da imagem armazenada no banco -->
+        <img src="{{ asset('assets/image/hqs/' . $hq->imagem) }}" alt="{{ $hq->titulo }}" class="img-fluid rounded shadow">
       </div>
 
       <!-- Informações da HQ -->
       <div class="col-md-8 mt-4 mt-md-0">
-        <h2><strong>Homem-Aranha: História de Vida</strong></h2>
+        <!-- Título da HQ -->
+        <h2><strong>{{ $hq->titulo }}</strong></h2>
 
+        <!-- Descrição da HQ -->
         <p><strong>Descrição:</strong></p>
-        <p>
-        Em Amazing Fantasy 15, de 1962, Peter Parker, um garoto de 15 anos, é picado por uma aranha irradiada e se torna o Espetacular Homem-Aranha! Cinquenta e oito anos se passaram no mundo real desde então — o que aconteceria se o mesmo tempo passasse para Peter? Chip Zdarsky e Mark Bagley se unem para uma abordagem única — contar a história da vida inteira do Homem-Aranha, com todos os eventos-chave das décadas em que ele viveu. Da Guerra do Vietnã, passando pelas Guerras Secretas e a Guerra Civil dos super-heróis, chegando ao que pode ser a última missão de um idoso Cabeça de Teia. Prepare-se para ver
-        </p>
+        <p>{{ $hq->descricao }}</p>
 
         <!-- Gêneros -->
         <div class="mb-3">
-          <span class="badge bg-primary me-2">Ação</span>
-          <span class="badge bg-info text-dark">Aventura</span>
+          @foreach(explode(',', $hq->generos) as $genero) 
+            <span class="badge bg-primary me-2">{{ $genero }}</span>
+          @endforeach
         </div>
 
         <!-- Autor e lançamento -->
         <div class="d-flex align-items-center mb-4">
-        <img src="{{ asset('assets/image/autor.png') }}" class="rounded-circle me-2" width="40">
+          <img src="{{ asset('assets/image/autor.png') }}" class="rounded-circle me-2" width="40">
           <div>
-            <p class="mb-0"><strong>Autor</strong></p>
-            <small class="text-muted">data de lançamento</small>
+            <p class="mb-0"><strong>Autor:</strong> {{ $hq->autor }}</p>
+            <small class="text-muted">Lançamento: {{ $hq->lancamento }}</small>
           </div>
         </div>
 
@@ -54,14 +56,25 @@
       <div class="col">
         <h4 class="mb-3">
           <b><span class="fs-4">📌</span> Onde Comprar</b>
-        </h5>
-        <p class="mb-1">Amazon</p>
-        <a href="#" target="_blank" class="text-decoration-none text-secondary">Link</a>
-        
-        <hr class="my-3 w-50">
-        
-        <p class="mb-1">Reboot</p>
-        <a href="#" target="_blank" class="text-decoration-none text-secondary">Link</a>
+        </h4>
+
+        <!-- Exibindo os links de compra -->
+        @if($hq->link1)
+          <p class="mb-1">Amazon</p>
+          <a href="{{ $hq->link1 }}" target="_blank" class="text-decoration-none text-secondary">Link</a>
+        @endif
+
+        @if($hq->link2)
+          <hr class="my-3 w-50">
+          <p class="mb-1">Reboot</p>
+          <a href="{{ $hq->link2 }}" target="_blank" class="text-decoration-none text-secondary">Link</a>
+        @endif
+
+        @if($hq->link3)
+          <hr class="my-3 w-50">
+          <p class="mb-1">Link Adicional</p>
+          <a href="{{ $hq->link3 }}" target="_blank" class="text-decoration-none text-secondary">Link</a>
+        @endif
       </div>
     </div>
 

@@ -112,6 +112,27 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        // Nova conexão para o banco de HQs
+        'comicsdb' => [
+            'driver' => 'mysql',
+            'url' => env('COMICS_DB_URL'),
+            'host' => env('COMICS_DB_HOST', '127.0.0.1'),
+            'port' => env('COMICS_DB_PORT', '3306'),
+            'database' => env('COMICS_DB_DATABASE', 'comicsghost'),  // O nome do seu banco de HQs
+            'username' => env('COMICS_DB_USERNAME', 'root'),
+            'password' => env('COMICS_DB_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => env('DB_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
     ],
 
     /*
