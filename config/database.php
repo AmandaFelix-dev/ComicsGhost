@@ -112,15 +112,36 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
-        // Nova conexão para o banco de HQs
+        // Sua conexão existente para HQs
         'comicsdb' => [
             'driver' => 'mysql',
             'url' => env('COMICS_DB_URL'),
             'host' => env('COMICS_DB_HOST', '127.0.0.1'),
             'port' => env('COMICS_DB_PORT', '3306'),
-            'database' => env('COMICS_DB_DATABASE', 'comicsghost'),  // O nome do seu banco de HQs
+            'database' => env('COMICS_DB_DATABASE', 'comicsghost'),
             'username' => env('COMICS_DB_USERNAME', 'root'),
             'password' => env('COMICS_DB_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => env('DB_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+        // Nova conexão para o banco Internas
+        'internas' => [
+            'driver' => 'mysql',
+            'url' => env('DB_INTERNA_URL'),
+            'host' => env('DB_INTERNA_HOST', '127.0.0.1'),
+            'port' => env('DB_INTERNA_PORT', '3306'),
+            'database' => env('DB_INTERNA_DATABASE', 'Internas'),
+            'username' => env('DB_INTERNA_USERNAME', 'root'),
+            'password' => env('DB_INTERNA_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => env('DB_CHARSET', 'utf8mb4'),
             'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),

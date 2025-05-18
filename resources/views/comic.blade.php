@@ -12,11 +12,11 @@
   <!-- Conteúdo principal -->
   <div class="container my-5 w-100">
     <div class="row align-items-start">
-      
+
       <!-- Capa da HQ -->
       <div class="col-md-4 text-center">
         <!-- Usando o caminho da imagem armazenada no banco -->
-        <img src="{{ asset('assets/image/hqs/' . $hq->imagem) }}" alt="{{ $hq->titulo }}" class="img-fluid rounded shadow">
+        <img src="{{ asset('/assets/image/home/hqs/' . $hq->imagens) }}" alt="{{ $hq->titulo }}" class="img-fluid rounded shadow">
       </div>
 
       <!-- Informações da HQ -->
@@ -60,20 +60,20 @@
 
         <!-- Exibindo os links de compra -->
         @if($hq->link1)
-          <p class="mb-1">Amazon</p>
-          <a href="{{ $hq->link1 }}" target="_blank" class="text-decoration-none text-secondary">Link</a>
+          <p class="mb-1">Link 1:</p>
+          <a href="{{ $hq->link1 }}" target="_blank" class="text-decoration-none text-secondary">{{ $hq->link1 }}</a>
         @endif
 
         @if($hq->link2)
           <hr class="my-3 w-50">
-          <p class="mb-1">Reboot</p>
-          <a href="{{ $hq->link2 }}" target="_blank" class="text-decoration-none text-secondary">Link</a>
+          <p class="mb-1">Link 2:</p>
+          <a href="{{ $hq->link2 }}" target="_blank" class="text-decoration-none text-secondary">{{ $hq->link2 }}</a>
         @endif
 
         @if($hq->link3)
           <hr class="my-3 w-50">
-          <p class="mb-1">Link Adicional</p>
-          <a href="{{ $hq->link3 }}" target="_blank" class="text-decoration-none text-secondary">Link</a>
+          <p class="mb-1">Link 3:</p>
+          <a href="{{ $hq->link3 }}" target="_blank" class="text-decoration-none text-secondary">{{ $hq->link3 }}</a>
         @endif
       </div>
     </div>
