@@ -9,35 +9,36 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-  <div class="container my-5 w-100">
-    <div class="row align-items-start">
+  <div class="container my-5">
+    <div class="row g-5">
 
       <!-- Capa da HQ -->
-      <img src="{{ asset('/assets/image/home/hqs/' . $hq->imagens) }}" 
-        alt="{{ $hq->titulo }}" 
-        class="rounded shadow" 
-        style="width: 420px; height: 600px; object-fit: cover;">
+      <div class="col-md-4 text-center">
+        <img src="{{ asset('/assets/image/home/hqs/' . $hq->imagens) }}" 
+             alt="{{ $hq->titulo }}" 
+             class="img-fluid rounded shadow" 
+             style="width: 100%; max-width: 300px; height: auto;">
+      </div>
 
       <!-- Informações da HQ -->
-      <div class="col-md-8 mt-4 mt-md-0">
-        <h2><strong>{{ $hq->titulo }}</strong></h2>
+      <div class="col-md-8">
+        <!-- Título -->
+        <h2 class="fw-bold">{{ $hq->titulo }}</h2>
 
-      <!-- Descrição da HQ -->
-      <div class="mb-4">
-        <p><strong>Descrição:</strong></p>
-        <div style="max-width: 600px;">
+        <!-- Descrição -->
+        <div class="mb-4" style="max-width: 700px;">
+          <p><strong>Descrição:</strong></p>
           <p class="text-start">{{ $hq->descricao }}</p>
         </div>
-      </div>
 
         <!-- Gêneros -->
         <div class="mb-3">
           @foreach(explode(',', $hq->generos) as $genero)
-            <span class="badge bg-primary me-2">{{ $genero }}</span>
+            <span class="badge bg-primary me-2">{{ trim($genero) }}</span>
           @endforeach
         </div>
 
-        <!-- Autor e lançamento -->
+        <!-- Autor e Lançamento -->
         <div class="d-flex align-items-center mb-4">
           <img src="{{ asset('assets/image/autor.png') }}" class="rounded-circle me-2" width="40">
           <div>
