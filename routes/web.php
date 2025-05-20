@@ -13,6 +13,14 @@ Route::get('/cadastro', function () {
     return view('register');
 });
 
+Route::get('/perfil', function () {
+    return view ('userprofile');
+});
+
+Route::get('/generos', function () {
+    return view('categories');
+});
+
 // Página de gêneros
 Route::get('/generos', function () {
     return view('categories');
