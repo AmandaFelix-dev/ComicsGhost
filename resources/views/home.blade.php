@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ComicsGhost - Página Inicial</title>
+  <title>ComicsGhost</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="{{ asset('css/home.css') }}" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
@@ -71,9 +71,9 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 gx-5 justify-content-center">
 
       <div class="col-md-6 col-lg-6">
-        <div class="d-flex bg-light rounded shadow-sm p-3 h-100">
+        <div class="d-flex bg-light rounded shadow-sm h-100">
           <img src="{{ asset('assets/image/home/hqs/hq1.png') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
-          <div class="d-flex flex-column justify-content-between">
+          <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">Invincible #144</h5>
               <p class="text-muted mb-2">The end of all things</p>
@@ -85,9 +85,9 @@
       </div>
 
       <div class="col-md-6 col-lg-6">
-        <div class="d-flex bg-light rounded shadow-sm p-3 h-100">
+        <div class="d-flex bg-light rounded shadow-sm h-100">
           <img src="{{ asset('assets/image/home/hqs/hq2.png') }}" alt="HQ2" class="img-fluid me-3 rounded" style="width: 120px;">
-          <div class="d-flex flex-column justify-content-between">
+          <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">X-Men '97</h5>
               <p class="text-muted mb-2">Grandes X-Pectativas</p>
@@ -100,9 +100,9 @@
       </div>
 
       <div class="col-md-6 col-lg-6">
-        <div class="d-flex bg-light rounded shadow-sm p-3 h-100">
+        <div class="d-flex bg-light rounded shadow-sm h-100">
           <img src="{{ asset('assets/image/home/hqs/hq3.png') }}" alt="HQ3" class="img-fluid me-3 rounded" style="width: 120px;">
-          <div class="d-flex flex-column justify-content-between">
+          <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">Homem-Aranha 2099</h5>
               <p class="text-muted mb-2">A volta do futuro</p>
@@ -114,9 +114,9 @@
       </div>
 
       <div class="col-md-6 col-lg-6">
-        <div class="d-flex bg-light rounded shadow-sm p-3 h-100">
+        <div class="d-flex bg-light rounded shadow-sm h-100">
           <img src="{{ asset('assets/image/home/hqs/hq4.png') }}" alt="HQ4" class="img-fluid me-3 rounded" style="width: 120px;">
-          <div class="d-flex flex-column justify-content-between">
+          <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">Capitão América: Renascimento</h5>
               <p class="text-muted mb-2">O retorno do herói</p>
@@ -131,7 +131,9 @@
 
   <!-- Botão final -->
   <div class="mt-5 text-center">
-    <a href="#" class="btn btn-dark px-4">Listar todos HQs <span class="ms-1">▼</span></a>
+    <button type="button" class="btn btn-dark px-4 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+      Listar todos HQs
+    </button>
   </div>
 </section>
 

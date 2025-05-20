@@ -1,13 +1,17 @@
-/* ===== Reset & Base ===== */
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+* {
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+
+/* Reset & Base */
 body {
-  background-color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-/* ===== Layout Principal ===== */
+/* Layout Principal */
 .layout-wrapper {
   max-width: 1050px;
   height: 565px;
@@ -17,7 +21,7 @@ body {
   justify-content: center;
 }
 
-/* ===== Navbar ===== */
+/* Navbar */
 header.navbar-custom {
   width: 100%;
   max-width: 1439px;
@@ -36,16 +40,14 @@ header.navbar-custom {
 
 .navbar-custom img.logo-ghost {
   height: 40px;
-  margin-right:fixed ;
+  margin-right: fixed;
 }
 
-/* ===== Caixa do Formulário ===== */
+/* Caixa do Formulário */
 .form-box {
   display: flex;
   width: 100%;
   min-height: 560px;
-  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
-  /* border-radius: 20px; */
   overflow: hidden;
   background-color: white;
 }
@@ -57,7 +59,7 @@ header.navbar-custom {
   background-color: white;
 }
 
-/* ===== Imagem Lateral ===== */
+/* Imagem Lateral */
 .bg-img {
   width: 520px;
   height: 100%;
@@ -67,7 +69,7 @@ header.navbar-custom {
   border-radius: 20px;
 }
 
-/* ===== Botões do Formulário ===== */
+/* Botões do Formulário */
 .form-section .btn {
   font-size: 1rem;
   height: 48px;
@@ -85,7 +87,7 @@ header.navbar-custom {
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-/* ===== Rodapé ===== */
+/* Rodapé */
 footer {
   text-align: center;
   margin-top: 20px;

@@ -1,33 +1,133 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f9fa;
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+* {
+  font-family: 'Wix Madefor Display', sans-serif;
+  box-sizing: border-box;
 }
 
+/* Corpo da página */
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho escuro com imagem de perfil */
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.bg-dark h5,
+.bg-dark small {
+  margin: 0;
+}
+
+/* Estilo geral dos cards */
 .card {
-  transition: transform 0.3s;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 0.75rem;
+  background-color: #f5f5f5;
 }
 
 .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem do card */
+.card-img-top,
+.hq-card img {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
+
+/* Card específico para HQs (carrossel) */
+.hq-card {
+  min-width: 200px;
+  max-width: 200px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.hq-card:hover {
   transform: scale(1.03);
+}
+
+/* Banner principal */
+.banner-img {
+  width: 520px;
+  height: 408px;
+  object-fit: cover;
+}
+
+/* Imagem de perfil */
+.logo-ghost {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Estilo dos botões */
+.btn-danger {
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Badge */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.35em 0.6em;
+  border-radius: 0.4rem;
+}
+
+/* Customização dos controles do carrossel */
+.carousel {
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  opacity: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: -25px;
+}
+
+.carousel-control-next {
+  right: -25px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  padding: 10px;
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(0.7);
 }
 
-.navbar-brand img {
-  width: 40px;
-  height: 40px;
-}
-
-.navbar-brand span {
-  font-size: 1.25rem;
-}
-
-.carousel {
-  max-width: 960px;
-  margin: 0 auto;
+/* Espaçamento entre cards do carrossel */
+.carousel-item > .d-flex > .card {
+  margin: 0 0.25rem;
 }
