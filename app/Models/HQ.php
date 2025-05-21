@@ -24,7 +24,7 @@ class HQ extends Model
         'generos',      // Gêneros da HQ
         'autor',        // Autor da HQ
         'lancamento',   // Data de lançamento
-        'imagem',       // Caminho da imagem
+        'imagens',       // Caminho da imagem
         'link1',        // Primeiro link de compra
         'link2',        // Segundo link de compra
         'link3'         // Terceiro link de compra
