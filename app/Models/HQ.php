@@ -10,7 +10,7 @@ class HQ extends Model
     use HasFactory;
 
     // Definindo a conexão com o banco de dados 'interna' conforme a configuração no database.php
-    protected $connection = 'internas'; // Nome da conexão configurada no database.php
+    //protected $connection = 'internas'; // Nome da conexão configurada no database.php
 
     // Definindo o nome da tabela, caso não siga o padrão plural
     protected $table = 'hqs'; // Nome da tabela que você criou

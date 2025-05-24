@@ -22,9 +22,8 @@ Route::get('/generos', function () {
 });
 
 // Página de gêneros
-Route::get('/generos', function () {
-    return view('categories');
-});
+Route::get('/generos', [App\Http\Controllers\GeneroController::class, 'index']);
+
 
 // Página de perfil do usuário
 Route::get('/perfil', function () {
