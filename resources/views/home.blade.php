@@ -10,6 +10,24 @@
 </head>
 <body style="font-family: 'Wix Madefor Display', sans-serif;">
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/image/comicsghostlogo.jpg" alt="Logo" width="30" height="30" class="me-2 rounded-circle">
+        <span class="fw-bold">ComicsGhost</span>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Gêneros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Itens em Destaque</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Todos os Itens</a></li>
+        </ul>
+        <a href="#" class="btn btn-outline-dark ms-3">Entrar →</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Banner de Topo -->
   <header>
     <div style="background: url('{{ asset('assets/image/home/banner-hq.png') }}') no-repeat center center; background-size: cover; height: 300px;"></div>
@@ -72,7 +90,7 @@
 
       <div class="col-md-6 col-lg-6">
         <div class="d-flex bg-light rounded shadow-sm h-100">
-          <img src="{{ asset('assets/image/home/hqs/hq1.png') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
+          <img src="{{ asset('assets/image/home/hqs/h1.webp') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">Invincible #144</h5>
@@ -131,11 +149,19 @@
 
   <!-- Botão final -->
   <div class="mt-5 text-center">
-    <button type="button" class="btn btn-dark px-4 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+    <a href="/generos" class="btn btn-dark px-4">
       Listar todos HQs
-    </button>
+    </a>
   </div>
 </section>
+
+
+<!-- Rodapé -->
+<footer class="text-center py-4">
+    <p class="mb-0">© Time unides7 2025</p>
+    <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+  </footer>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
