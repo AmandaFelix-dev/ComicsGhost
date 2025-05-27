@@ -11,22 +11,34 @@
 <body style="font-family: 'Wix Madefor Display', sans-serif;">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/image/comicsghostlogo.jpg" alt="Logo" width="30" height="30" class="me-2 rounded-circle">
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+        <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Logo" class="logo-ghost" style="width: 30px; height: 30px;">
         <span class="fw-bold">ComicsGhost</span>
       </a>
-      <div class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Gêneros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Itens em Destaque</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Todos os Itens</a></li>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="padding: 0.25rem 0.5rem; font-size: 1rem;">
+        <span class="navbar-toggler-icon" style="width: 1.5em; height: 1.5em;"></span>
+      </button>
+
+      <!-- Links da navbar -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-dark" href="/generos">Gêneros</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="/#destaques">Itens em Destaque</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="/#todos">Todos os Itens</a></li>
         </ul>
-        <a href="#" class="btn btn-outline-dark ms-3">Entrar →</a>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="/cadastro" class="btn btn-outline-dark rounded-pill">Entrar →</a>
       </div>
     </div>
   </nav>
+
 
   <!-- Banner de Topo -->
   <header>
@@ -34,7 +46,7 @@
   </header>
 
   <!-- Destaques -->
-  <section class="text-center py-5 container">
+  <section class="text-center py-5 container" id="destaques">
     <h2 class="fw-bold mb-3">Destaques</h2>
     <p class="text-muted mb-4">Confira as HQs que estão sendo mais comentadas nos últimos tempos!<br> Seja por revivals dos clássicos, entre renascimentos ou polêmicas, confira elas:</p>
 
@@ -79,7 +91,7 @@
   </section>
 
   <!-- Todos -->
-  <section class="container py-2">
+  <section class="container py-2" id="todos">
     
   <section class="pb-5">
     <h2 class="fw-bold mb-4 text-center">Todos</h2>
@@ -156,8 +168,8 @@
 </section>
 
 
-<!-- Rodapé -->
-<footer class="text-center py-4">
+  <!-- Rodapé -->
+  <footer class="text-center py-4">
     <p class="mb-0">© Time unides7 2025</p>
     <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
   </footer>
