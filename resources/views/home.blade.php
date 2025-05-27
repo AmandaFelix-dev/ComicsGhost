@@ -72,7 +72,7 @@
 
       <div class="col-md-6 col-lg-6">
         <div class="d-flex bg-light rounded shadow-sm h-100">
-          <img src="{{ asset('assets/image/home/hqs/hq1.png') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
+          <img src="{{ asset('assets/image/home/hqs/h1.webp') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">Invincible #144</h5>
@@ -131,9 +131,9 @@
 
   <!-- Botão final -->
   <div class="mt-5 text-center">
-    <button type="button" class="btn btn-dark px-4 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+    <a href="/generos" class="btn btn-dark px-4">
       Listar todos HQs
-    </button>
+    </a>
   </div>
 </section>
 
