@@ -12,21 +12,34 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<!-- <header class="navbar-custom">
-  <div class="d-flex align-items-center gap-2">
-    <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Ícone ComicsGhost" class="logo-ghost">
-    <span class="fs-4 fw-semibold ms-2">ComicsGhost</span>
-  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+        <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Logo" class="logo-ghost" style="width: 30px; height: 30px;">
+        <span class="fw-bold">ComicsGhost</span>
+      </a>
 
-  <nav class="d-none d-md-flex gap-4 text-secondary fw-bold wix-madefor-display-hero-title">
-    <a href="#" class="text-decoration-none text-dark px-2">Gêneros</a>
-    <a href="#" class="text-decoration-none text-dark px-2">Itens em Destaque</a>
-    <a href="#" class="text-decoration-none text-dark px-2">Todos os Itens</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="padding: 0.25rem 0.5rem; font-size: 1rem;">
+        <span class="navbar-toggler-icon" style="width: 1.5em; height: 1.5em;"></span>
+      </button>
+
+      <!-- Links da navbar -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-dark" href="/generos">Gêneros</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="/#destaques">Itens em Destaque</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="/#todos">Todos os Itens</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="/cadastro" class="btn btn-outline-dark rounded-pill">Entrar →</a>
+      </div>
+    </div>
   </nav>
-
-  <button class="btn btn-outline-secondary rounded-pill px-4">Entrar →</button>
-</header> -->
 
 <!-- Conteúdo principal -->
 <main class="layout-wrapper">
@@ -64,15 +77,11 @@
   </div>
 </main>
 
-<!-- Rodapé -->
-<!-- <footer class="text-center mt-5 pb-4">
-  <div class="footer-content d-flex justify-content-center align-items-center">
-    <span>© Time unides7 2025</span>
-    <a href="https://github.com/seu-usuario" target="_blank">
-      <img src="{{ asset('assets/image/githubicon.png') }}" alt="GitHub" class="ms-2" />
-    </a>
-  </div>
-</footer> -->
+  <!-- Rodapé -->
+  <footer class="text-center py-4">
+    <p class="mb-0">© Time unides7 2025</p>
+    <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+  </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{ asset('js/register.js') }}"></script>
