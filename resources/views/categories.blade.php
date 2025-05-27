@@ -51,15 +51,14 @@
       <p class="lead">
         Aqui você encontra HQs organizadas por gêneros, desde super-heróis até aventuras intensas. Escolha seu favorito e mergulhe em um universo de emoções!
       </p>
-      {{-- Dropdown de Gêneros (Estático, como no original) --}}
       <div class="dropdown mt-3">
         <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownGeneros" data-bs-toggle="dropdown" aria-expanded="false">
           Listar gêneros
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownGeneros">
           <li><a class="dropdown-item" href="#acao">Ação</a></li>
-          <li><a class="dropdown-item" href="#suspense">Suspense</a></li>
           <li><a class="dropdown-item" href="#drama">Drama</a></li>
+          <li><a class="dropdown-item" href="#suspense">Suspense</a></li>
         </ul>
       </div>
     </div>
@@ -80,7 +79,7 @@
         <div class="carousel-inner">
           @if(isset($acao) && count($acao) > 0)
             @foreach($acao as $index => $hq)
-              <div class="carousel-item {{ $index == 0 ? "active" : "" }}">
+              <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                 <div class="card d-flex flex-row align-items-center p-3 mx-auto" style="max-width: 700px;">
                   <img src="{{ asset('assets/image/home/hqs/'. $hq->imagens) }}" alt="{{ $hq->titulo }}" class="img-fluid me-3 rounded" style="width: 120px; height: 160px; object-fit: cover;">
                   <div class="card-body">
@@ -129,12 +128,12 @@
         <div class="carousel-inner">
           @if(isset($drama) && count($drama) > 0)
             @foreach($drama as $index => $hq)
-              <div class="carousel-item {{ $index == 0 ? "active" : "" }}">
+              <div class="carousel-item {{ $index == 0 ? 'active' : ''}}">
                 <div class="card d-flex flex-row align-items-center p-3 mx-auto" style="max-width: 700px;">
                   <img src="{{ asset('assets/image/home/hqs/' . $hq->imagens) }}" alt="{{ $hq->titulo }}" class="img-fluid me-3 rounded-3 shadow-sm" style="width: 120px; height: 160px; object-fit: cover;">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">{{ $hq->titulo }}</h5>
-                    <p class="card-text">{{ Str::limit($hq->descricao, 60) }}</p>
+                    <p class="card-text">{{ Str::limit($hq->descricao, 60)}}</p>
                     <span class="badge bg-warning text-dark">Drama</span> {{-- Badge estático pois esta é a seção de Drama --}}
                     <a href="{{ route('hqs.show', $hq->id) }}" class="btn btn-danger">Veja mais</a>
                   </div>
@@ -178,14 +177,14 @@
         <div class="carousel-inner">
           @if(isset($suspense) && count($suspense) > 0)
             @foreach($suspense as $index => $hq)
-              <div class="carousel-item {{ $index == 0 ? "active" : "" }}">
+              <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                 <div class="card d-flex flex-row align-items-center p-3 mx-auto" style="max-width: 700px;">
-                  <img src="{{ asset("assets/image/home/hqs/" . $hq->imagens) }}" alt="{{ $hq->titulo }}" class="img-fluid me-3 rounded-3 shadow-sm" style="width: 120px; height: 160px; object-fit: cover;">
+                  <img src="{{ asset('assets/image/home/hqs/' . $hq->imagens) }}" alt="{{ $hq->titulo }}" class="img-fluid me-3 rounded-3 shadow-sm" style="width: 120px; height: 160px; object-fit: cover;">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">{{ $hq->titulo }}</h5>
                     <p class="card-text">{{ Str::limit($hq->descricao, 60) }}</p>
                     <span class="badge bg-secondary">Suspense</span> {{-- Badge estático pois esta é a seção de Suspense --}}
-                    <a href="{{ route("hqs.show", $hq->id) }}" class="btn btn-danger">Veja mais</a>
+                    <a href="{{ route('hqs.show', $hq->id) }}" class="btn btn-danger">Veja mais</a>
                   </div>
                 </div>
               </div>
