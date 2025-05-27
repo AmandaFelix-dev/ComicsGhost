@@ -10,6 +10,24 @@
 </head>
 <body style="font-family: 'Wix Madefor Display', sans-serif;">
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/image/comicsghostlogo.jpg" alt="Logo" width="30" height="30" class="me-2 rounded-circle">
+        <span class="fw-bold">ComicsGhost</span>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Gêneros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Itens em Destaque</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Todos os Itens</a></li>
+        </ul>
+        <a href="#" class="btn btn-outline-dark ms-3">Entrar →</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Banner de Topo -->
   <header>
     <div style="background: url('{{ asset('assets/image/home/banner-hq.png') }}') no-repeat center center; background-size: cover; height: 300px;"></div>
@@ -136,6 +154,14 @@
     </a>
   </div>
 </section>
+
+
+<!-- Rodapé -->
+<footer class="text-center py-4">
+    <p class="mb-0">© Time unides7 2025</p>
+    <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+  </footer>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
