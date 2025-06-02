@@ -71,13 +71,21 @@ git push -u origin NAME
 git pull origin NAME
 ```
 
+# ⚙️ Executar Projeto
 
-Quando o servidor estiver funcionando, abra o seu browser e navegue até `http://localhost:4200/`.  A aplicação será recarregada automaticamente sempre que modificar algum dos ficheiros de origem.
+### Arquivo .env
+Na raíz do projeto, é possível identificar o arquivo ```.env.example```, copie o conteúdo dele em um novo arquivo chamado ```.env```. 
+Após isso, no terminal, faça o seguinte comando: ```php artisan key:generate```. Isso vai gerar automaticamente uma chave de criptografia e adicioná-la ao seu ```.env```.
+### Comando de execução
+```
+php artisan migrate && php artisan db:seed --class=HqsSeeder && php artisan serve
+```
+Este comando irá primeiro executar migrações pendentes, depois popular o banco de dados e, finalmente, iniciar o servidor do Laravel.
+Abra o seu browser e navegue até `http://127.0.0.1:8000/`. 
 
 # 📑 Recursos adicionais
 
 Para obter mais informações sobre o projeto navegue pela aplicação e dê uma olhadinha no nosso [repositório](https://github.com/felixAmandy/WEB-Project).
 
 
-### 😁 Enjoy! 👍🏼
-
+### 😁 Enjoy!
