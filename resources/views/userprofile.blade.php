@@ -52,8 +52,8 @@
     <div class="container d-flex align-items-center">
       <img src="{{ asset('assets/image/perfil.png') }}" alt="Avatar" class="rounded-circle me-3" width="60" height="60">
       <div>
-        <h5 class="mb-0">Usuário</h5>
-        <small>email@gmail.com</small>
+        <h5 class="mb-0">{{ $perfil[0]->username }}</h5>
+        <small>{{ $perfil[0]->email }}</small>
       </div>
     </div>
   </section>

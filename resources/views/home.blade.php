@@ -60,22 +60,22 @@
         <div class="carousel-item active">
           <img src="assets/image/home/carousel/Invincible-banner.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>{{ $homes[0]->titulo }}</h5>
+            <p>{{ $homes[0]->descricao }}</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="assets/image/home/carousel/Batman-banner.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>{{ $homes[3]->titulo }}</h5>
+            <p>{{ $homes[3]->descricao }}</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="assets/image/home/carousel/X-man-97-banner.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>{{ $homes[2]->titulo }}</h5>
+            <p>{{ $homes[2]->descricao }}</p>
           </div>
         </div>
       </div>
@@ -100,27 +100,28 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 gx-5 justify-content-center">
 
-      <div class="col-md-6 col-lg-6">
-        <div class="d-flex bg-light rounded shadow-sm h-100">
-          <img src="{{ asset('assets/image/home/hqs/h1.webp') }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
-          <div class="d-flex py-3 flex-column justify-content-between">
-            <div>
-              <h5 class="fw-bold mb-1">Invincible #144</h5>
-              <p class="text-muted mb-2">The end of all things</p>
-              <span class="badge bg-primary me-1">Ação</span>
+        <div class="col-md-6 col-lg-6">
+          <div class="d-flex bg-light rounded shadow-sm h-100">
+            <img src="{{ asset('assets/image/home/hqs/' . $homes[0]->imagens) }}" alt="HQ1" class="img-fluid me-3 rounded" style="width: 120px;">
+            <div class="d-flex py-3 flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold mb-1">{{ $homes[0]->titulo }}</h5>
+                <p class="text-muted mb-2">{{ $homes[0]->descricao }}</p>
+                <span class="badge bg-primary me-1">Ação</span>
+              </div>
+              <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
             </div>
-            <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
           </div>
         </div>
-      </div>
+
 
       <div class="col-md-6 col-lg-6">
         <div class="d-flex bg-light rounded shadow-sm h-100">
-          <img src="{{ asset('assets/image/home/hqs/hq2.png') }}" alt="HQ2" class="img-fluid me-3 rounded" style="width: 120px;">
+          <img src="{{ asset('assets/image/home/hqs/' . $homes[1]->imagens) }}" alt="HQ2" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex py-3 flex-column justify-content-between">
             <div>
-              <h5 class="fw-bold mb-1">X-Men '97</h5>
-              <p class="text-muted mb-2">Grandes X-Pectativas</p>
+              <h5 class="fw-bold mb-1">{{ $homes[1]->titulo }}</h5>
+              <p class="text-muted mb-2">{{ $homes[1]->descricao }}</p>
               <span class="badge bg-info me-1">Drama</span>
               <span class="badge bg-warning text-dark me-1">Fantasia</span>
             </div>
@@ -131,11 +132,11 @@
 
       <div class="col-md-6 col-lg-6">
         <div class="d-flex bg-light rounded shadow-sm h-100">
-          <img src="{{ asset('assets/image/home/hqs/hq3.png') }}" alt="HQ3" class="img-fluid me-3 rounded" style="width: 120px;">
+          <img src="{{ asset('assets/image/home/hqs/' . $homes[2]->imagens) }}" alt="HQ3" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex py-3 flex-column justify-content-between">
             <div>
-              <h5 class="fw-bold mb-1">Homem-Aranha 2099</h5>
-              <p class="text-muted mb-2">A volta do futuro</p>
+              <h5 class="fw-bold mb-1">{{ $homes[2]->titulo }}</h5>
+              <p class="text-muted mb-2">{{ $homes[2]->descricao }}</p>
               <span class="badge bg-success me-1">Ficção</span>
             </div>
             <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
@@ -145,11 +146,11 @@
 
       <div class="col-md-6 col-lg-6">
         <div class="d-flex bg-light rounded shadow-sm h-100">
-          <img src="{{ asset('assets/image/home/hqs/hq4.png') }}" alt="HQ4" class="img-fluid me-3 rounded" style="width: 120px;">
+          <img src="{{ asset('assets/image/home/hqs/' . $homes[3]->imagens) }}" alt="HQ4" class="img-fluid me-3 rounded" style="width: 120px;">
           <div class="d-flex py-3 flex-column justify-content-between">
             <div>
-              <h5 class="fw-bold mb-1">Capitão América: Renascimento</h5>
-              <p class="text-muted mb-2">O retorno do herói</p>
+              <h5 class="fw-bold mb-1">{{ $homes[3]->titulo }}</h5>
+              <p class="text-muted mb-2">{{ $homes[3]->descricao }}</p>
               <span class="badge bg-danger me-1">Heróis</span>
               <span class="badge bg-secondary me-1">Clássico</span>
             </div>
