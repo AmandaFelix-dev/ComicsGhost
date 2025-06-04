@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,13 +17,15 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center gap-2" href="/">
-        <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Logo" class="logo-ghost" style="width: 30px; height: 30px;">
+        <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Logo" class="logo-ghost"
+          style="width: 30px; height: 30px;">
         <span class="fw-bold">ComicsGhost</span>
       </a>
 
@@ -61,109 +64,95 @@
   <!-- Conteúdo principal -->
   <main class="container py-5">
     <h3 class="fw-bold mb-2">Lista de Favoritos</h3>
-    <p class="text-muted mb-4">Esta seção é nosso cantinho preferido. Qual vai ser a sua próxima obsessão?</p>
+    <p class="text-muted mb-4">Confira os HQs mais curtidos dos últimos tempos! Em breve, você também poderá adicionar
+      os seus favoritos.</p>
 
-    <!-- Carrossel de Favoritos -->
-    <div id="carouselFavoritos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-      <div class="carousel-inner">
+    <!-- Card 1 -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 gx-5 justify-content-center">
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="d-flex justify-content-center gap-4">
-            <!-- Card 1 -->
-            <div class="card" style="width: 14rem;">
-              <img src="assets/image/home/hqs/h1.webp" class="card-img-top" alt="Invincible">
-              <div class="card-body">
-                <h6 class="card-title fw-bold mb-1">Invincible #144</h6>
-                <p class="card-text small">The end of all things</p>
-                <span class="badge bg-primary mb-2">Ação</span><br>
-                <a href="/hq/1" class="btn btn-danger btn-sm">Veja mais</a>
+        <div class="col-md-6 col-lg-6">
+          <div class="d-flex bg-light rounded shadow-sm h-100">
+            <img src="{{ asset('assets/image/home/hqs/h1.webp') }}" alt="HQ" class="img-fluid me-3 rounded"
+              style="width: 120px;">
+            <div class="d-flex py-3 flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold mb-1">Invincible #144</h5>
+                <p class="text-muted mb-2">The end of all things</p>
+                <span class="badge bg-info me-1">Drama</span>
+                <span class="badge bg-warning text-darkme-1">Fantasia</span>
               </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="card" style="width: 14rem;">
-              <img src="assets/image/home/hqs/miles_morales_1.jpg" class="card-img-top" alt="Spider-Man">
-              <div class="card-body">
-                <h6 class="card-title fw-bold mb-1">Spider-Man: Miles Morales #1</h6>
-                <span class="badge bg-primary me-1">Ação</span>
-                <span class="badge bg-info text-dark">Aventura</span><br>
-                <a href="/hq/2" class="btn btn-danger btn-sm mt-2">Veja mais</a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card" style="width: 14rem;">
-              <img src="assets/image/home/hqs/flash.jpg" class="card-img-top" alt="Flash">
-              <div class="card-body">
-                <h6 class="card-title fw-bold mb-1">Flash: Os Novos 52!</h6>
-                <span class="badge bg-warning text-dark">Velocidade</span><br>
-                <a href="/hq/4" class="btn btn-danger btn-sm mt-2">Veja mais</a>
-              </div>
+              <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
             </div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center gap-4">
-            <!-- Card 4 -->
-            <div class="card" style="width: 14rem;">
-              <img src="assets/image/home/hqs/batman_amaldicoado.png" class="card-img-top" alt="Batman">
-              <div class="card-body">
-                <h6 class="card-title fw-bold mb-1">Batman: Amaldiçoado</h6>
-                <span class="badge bg-dark text-white">Drama</span><br>
-                <a href="/hq/12" class="btn btn-danger btn-sm mt-2">Veja mais</a>
+        <div class="col-md-6 col-lg-6">
+          <div class="d-flex bg-light rounded shadow-sm h-100">
+            <img src="{{ asset('assets/image/home/hqs/h3.webp') }}" alt="HQ" class="img-fluid me-3 rounded"
+              style="width: 120px;">
+            <div class="d-flex py-3 flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold mb-1">Homem-Aranha #1</h5>
+                <p class="text-muted mb-2">Miles Morales</p>
+                <span class="badge bg-success me-1">Ficção</span>
               </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="card" style="width: 14rem;">
-              <img src="assets/image/home/hqs/watchmen.jpg" class="card-img-top" alt="Watchmen">
-              <div class="card-body">
-                <h6 class="card-title fw-bold mb-1">Watchmen</h6>
-                <span class="badge bg-success">Mistério</span><br>
-                <a href="/hq/9" class="btn btn-danger btn-sm mt-2">Veja mais</a>
-              </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="card" style="width: 14rem;">
-              <img src="assets/image/home/hqs/joker.webp" class="card-img-top" alt="Joker">
-              <div class="card-body">
-                <h6 class="card-title fw-bold mb-1">Joker: A Piada Mortal</h6>
-                <span class="badge bg-danger">Drama</span><br>
-                <a href="/hg/3" class="btn btn-danger btn-sm mt-2">Veja mais</a>
-              </div>
+              <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
             </div>
           </div>
         </div>
 
+ <div class="col-md-6 col-lg-6">
+          <div class="d-flex bg-light rounded shadow-sm h-100">
+            <img src="{{ asset('assets/image/home/hqs/h4.webp') }}" alt="HQ" class="img-fluid me-3 rounded"
+              style="width: 120px;">
+            <div class="d-flex py-3 flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold mb-1">Batman: A piada mortal</h5>
+                <p class="text-muted mb-2">Do premiado roteirista Alan Moore</p>
+                <span class="badge bg-success me-1">Ficção</span>
+                <span class="badge bg-danger me-1">Heróis</span>
+              </div>
+              <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="d-flex bg-light rounded shadow-sm h-100">
+            <img src="{{ asset('assets/image/home/hqs/h2.webp') }}" alt="HQ" class="img-fluid me-3 rounded"
+              style="width: 120px;">
+            <div class="d-flex py-3 flex-column justify-content-between">
+              <div>
+                <h5 class="fw-bold mb-1">X-Men '97</h5>
+                <p class="text-muted mb-2">Grandes X-Pectativas</p>
+                <span class="badge bg-danger me-1">Heróis</span>
+                <span class="badge bg-secondary me-1">Clássico</span>
+              </div>
+              <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Controles do carrossel -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselFavoritos" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselFavoritos" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
-
     </div>
-  </main>
 
-  <!-- Rodapé -->
-  <footer class="text-center py-4">
-    <p class="mb-0">© Time unides7 2025</p>
-    <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
-  </footer>
+    <!-- Rodapé -->
+    <footer class="text-center py-4">
+      <p class="mb-0">© Time unides7 2025</p>
+      <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+    </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      console.log("Página de perfil carregada.");
-    });
-    console.log('UserProfile pronto!');
-  </script>
-  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("Página de perfil carregada.");
+      });
+      console.log('UserProfile pronto!');
+    </script>
+
 </body>
+
 </html>
 </body>
+
 </html>
