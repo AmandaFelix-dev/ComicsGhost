@@ -124,7 +124,6 @@
       <p class="text-muted">Quando a emoção fala mais alto nas páginas...</p>
 
       <div id="carouselDrama" class="carousel slide" data-bs-ride="carousel">
-        {{-- CONTEÚDO DINÂMICO APENAS AQUI DENTRO --}}
         <div class="carousel-inner">
           @if(isset($drama) && count($drama) > 0)
             @foreach($drama as $index => $hq)
@@ -151,9 +150,8 @@
             </div>
           @endif
         </div>
-        {{-- FIM DO CONTEÚDO DINÂMICO --}}
 
-        {{-- Botões de navegação do carrossel Drama --}}
+        <!-- Botões de navegação do carrossel Drama -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselDrama" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
