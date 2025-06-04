@@ -42,7 +42,7 @@
       </div>
 
       <div class="d-none d-lg-block">
-        <a href="/cadastro" class="btn btn-outline-dark rounded-pill">Entrar →</a>
+        <a href="/cadastro" class="btn btn-outline-dark rounded-pill">Minha Conta</a>
       </div>
     </div>
   </nav>
