@@ -77,7 +77,7 @@
                 <h6 class="card-title fw-bold mb-1">Invincible #144</h6>
                 <p class="card-text small">The end of all things</p>
                 <span class="badge bg-primary mb-2">Ação</span><br>
-                <a href="#" class="btn btn-danger btn-sm">Veja mais</a>
+                <a href="/hq/1" class="btn btn-danger btn-sm">Veja mais</a>
               </div>
             </div>
             <!-- Card 2 -->
@@ -87,7 +87,7 @@
                 <h6 class="card-title fw-bold mb-1">Spider-Man: Miles Morales #1</h6>
                 <span class="badge bg-primary me-1">Ação</span>
                 <span class="badge bg-info text-dark">Aventura</span><br>
-                <a href="#" class="btn btn-danger btn-sm mt-2">Veja mais</a>
+                <a href="/hq/2" class="btn btn-danger btn-sm mt-2">Veja mais</a>
               </div>
             </div>
             <!-- Card 3 -->
@@ -96,7 +96,7 @@
               <div class="card-body">
                 <h6 class="card-title fw-bold mb-1">Flash: Os Novos 52!</h6>
                 <span class="badge bg-warning text-dark">Velocidade</span><br>
-                <a href="#" class="btn btn-danger btn-sm mt-2">Veja mais</a>
+                <a href="/hq/4" class="btn btn-danger btn-sm mt-2">Veja mais</a>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
               <div class="card-body">
                 <h6 class="card-title fw-bold mb-1">Batman: Amaldiçoado</h6>
                 <span class="badge bg-dark text-white">Drama</span><br>
-                <a href="#" class="btn btn-danger btn-sm mt-2">Veja mais</a>
+                <a href="/hq/12" class="btn btn-danger btn-sm mt-2">Veja mais</a>
               </div>
             </div>
             <!-- Card 5 -->
@@ -120,7 +120,7 @@
               <div class="card-body">
                 <h6 class="card-title fw-bold mb-1">Watchmen</h6>
                 <span class="badge bg-success">Mistério</span><br>
-                <a href="#" class="btn btn-danger btn-sm mt-2">Veja mais</a>
+                <a href="/hq/9" class="btn btn-danger btn-sm mt-2">Veja mais</a>
               </div>
             </div>
             <!-- Card 6 -->
@@ -129,7 +129,7 @@
               <div class="card-body">
                 <h6 class="card-title fw-bold mb-1">Joker: A Piada Mortal</h6>
                 <span class="badge bg-danger">Drama</span><br>
-                <a href="#" class="btn btn-danger btn-sm mt-2">Veja mais</a>
+                <a href="/hg/3" class="btn btn-danger btn-sm mt-2">Veja mais</a>
               </div>
             </div>
           </div>

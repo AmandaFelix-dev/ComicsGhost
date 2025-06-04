@@ -109,7 +109,7 @@
                 <p class="text-muted mb-2">{{ $homes[0]->descricao }}</p>
                 <span class="badge bg-primary me-1">Ação</span>
               </div>
-              <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+              <a href="/hq/1" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@
               <span class="badge bg-info me-1">Drama</span>
               <span class="badge bg-warning text-dark me-1">Fantasia</span>
             </div>
-            <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+            <a href="/hq/2" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
           </div>
         </div>
       </div>
