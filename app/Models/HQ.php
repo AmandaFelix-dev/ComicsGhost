@@ -10,7 +10,7 @@ class HQ extends Model
     use HasFactory;
 
     // Definindo a conexão com o banco de dados 'interna' conforme a configuração no database.php
-    protected $connection = 'internas'; // Nome da conexão configurada no database.php
+    //protected $connection = 'internas'; // Nome da conexão configurada no database.php
 
     // Definindo o nome da tabela, caso não siga o padrão plural
     protected $table = 'hqs'; // Nome da tabela que você criou
@@ -24,7 +24,7 @@ class HQ extends Model
         'generos',      // Gêneros da HQ
         'autor',        // Autor da HQ
         'lancamento',   // Data de lançamento
-        'imagem',       // Caminho da imagem
+        'imagens',       // Caminho da imagem
         'link1',        // Primeiro link de compra
         'link2',        // Segundo link de compra
         'link3'         // Terceiro link de compra

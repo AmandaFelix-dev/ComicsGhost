@@ -19,19 +19,30 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/image/comicsghostlogo.jpg" alt="Logo" width="30" height="30" class="me-2 rounded-circle">
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+        <img src="{{ asset('assets/image/comicsghostlogo.jpg') }}" alt="Logo" class="logo-ghost" style="width: 30px; height: 30px;">
         <span class="fw-bold">ComicsGhost</span>
       </a>
-      <div class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Gêneros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Itens em Destaque</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Todos os Itens</a></li>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="padding: 0.25rem 0.5rem; font-size: 1rem;">
+        <span class="navbar-toggler-icon" style="width: 1.5em; height: 1.5em;"></span>
+      </button>
+
+      <!-- Links da navbar -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-dark" href="/generos">Gêneros</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="/#destaques">Itens em Destaque</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="/#todos">Todos os Itens</a></li>
         </ul>
-        <a href="#" class="btn btn-outline-dark ms-3">Entrar →</a>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="/cadastro" class="btn btn-outline-dark rounded-pill">Entrar →</a>
       </div>
     </div>
   </nav>
@@ -41,8 +52,8 @@
     <div class="container d-flex align-items-center">
       <img src="{{ asset('assets/image/perfil.png') }}" alt="Avatar" class="rounded-circle me-3" width="60" height="60">
       <div>
-        <h5 class="mb-0">Usuário</h5>
-        <small>email@gmail.com</small>
+        <h5 class="mb-0">{{ $perfil[0]->username }}</h5>
+        <small>{{ $perfil[0]->email }}</small>
       </div>
     </div>
   </section>
@@ -139,7 +150,7 @@
     </div>
   </main>
 
-<!-- Rodapé -->
+  <!-- Rodapé -->
   <footer class="text-center py-4">
     <p class="mb-0">© Time unides7 2025</p>
     <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
