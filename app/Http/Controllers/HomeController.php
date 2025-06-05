@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Home;
+use App\Models\HQ;
 
 class HomeController extends Controller
 {
     public function index() {
-        $homes = Home::all();
+        $homes = HQ::all();
 
-        $home = Home::first();
+        $home = HQ::first();
 
         return view('home', ['homes' => $homes, 'home' => $home,]);
     }

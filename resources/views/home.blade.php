@@ -61,21 +61,21 @@
           <img src="assets/image/home/carousel/Invincible-banner.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>{{ $homes[0]->titulo }}</h5>
-            <p>{{ $homes[0]->descricao }}</p>
+            <p>The end of all things</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/image/home/carousel/Batman-banner.png" class="d-block w-100" alt="...">
+          <img src="assets/image/home/carousel/flash.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>{{ $homes[3]->titulo }}</h5>
-            <p>{{ $homes[3]->descricao }}</p>
+            <p>A ameça do gorila rei grodd</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/image/home/carousel/X-man-97-banner.png" class="d-block w-100" alt="...">
+          <img src="assets/image/home/carousel/coringa.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>{{ $homes[2]->titulo }}</h5>
-            <p>{{ $homes[2]->descricao }}</p>
+            <p>A origem de coringa</p>
           </div>
         </div>
       </div>
@@ -106,7 +106,7 @@
             <div class="d-flex py-3 flex-column justify-content-between">
               <div>
                 <h5 class="fw-bold mb-1">{{ $homes[0]->titulo }}</h5>
-                <p class="text-muted mb-2">{{ $homes[0]->descricao }}</p>
+                <p class="text-muted mb-2">The end of all things</p>
                 <span class="badge bg-primary me-1">Ação</span>
               </div>
               <a href="/hq/1" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
@@ -121,7 +121,7 @@
           <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">{{ $homes[1]->titulo }}</h5>
-              <p class="text-muted mb-2">{{ $homes[1]->descricao }}</p>
+              <p class="text-muted mb-2">Miles Morales</p>
               <span class="badge bg-info me-1">Drama</span>
               <span class="badge bg-warning text-dark me-1">Fantasia</span>
             </div>
@@ -136,10 +136,10 @@
           <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">{{ $homes[2]->titulo }}</h5>
-              <p class="text-muted mb-2">{{ $homes[2]->descricao }}</p>
+              <p class="text-muted mb-2">A origem de coringa </p>
               <span class="badge bg-success me-1">Ficção</span>
             </div>
-            <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+            <a href="/hq/3" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
           </div>
         </div>
       </div>
@@ -150,11 +150,11 @@
           <div class="d-flex py-3 flex-column justify-content-between">
             <div>
               <h5 class="fw-bold mb-1">{{ $homes[3]->titulo }}</h5>
-              <p class="text-muted mb-2">{{ $homes[3]->descricao }}</p>
+              <p class="text-muted mb-2">A ameça do gorila rei grodd</p>
               <span class="badge bg-danger me-1">Heróis</span>
               <span class="badge bg-secondary me-1">Clássico</span>
             </div>
-            <a href="#" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
+            <a href="/hq/4" class="btn btn-danger btn-sm mt-2 align-self-start">Veja mais</a>
           </div>
         </div>
       </div>
