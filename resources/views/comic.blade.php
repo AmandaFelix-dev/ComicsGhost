@@ -98,14 +98,26 @@
             <h5 class="mb-3">
               <span class="fs-4">📌</span> Onde Comprar
             </h5>
-            <p class="mb-1">Amazon</p>
-            <a href="https://www.amazon.com/Miles-Morales-Homem-Aranha-vol-Portuguese-ebook/dp/B08X8R6P3W?utm_source=chatgpt.com"
+            <p class="mb-1">{{ $hq->loja1 }}</p>
+            <a href="{{ $hq->link1 }}"
               class="text-decoration-none">Link</a>
-            <p class="mt-3 mb-1">Reboot</p>
-            <a href="#" class="text-decoration-none">Link</a>
+            <p class="mb-1">{{ $hq->loja2 }}</p>
+            <a href="{{ $hq->link2 }}"
+              class="text-decoration-none">Link</a>
+            @if($hq->loja3 != null)
+            <p class="mb-1">{{ $hq->loja3 }}</p>
+            <a href="{{ $hq->link3 }}"
+              class="text-decoration-none">Link</a>
+            @endif
           </div>
         </div>
       </div>
+
+      <!-- Rodapé -->
+      <footer class="text-center py-4">
+        <p class="mb-0">© Time unides7 2025</p>
+        <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+      </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
