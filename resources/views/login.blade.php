@@ -9,19 +9,9 @@
     <div class="form-box">
 
         <div class="form-section">
-            <h2 class="fw-bold mb-3 wix-madefor-display-hero-title">Cadastro de usuário</h2>
-            <p class="text-muted mb-4 pb-4">Preencha seus dados para criar uma conta</p>
-
-            <form action="/cadastro" method="POST">
-                @csrf
-                <div class="mb-4">
-                    <label for="username" class="fw-bold mb-2 wix-madefor-display-hero-title">Nome de usuário</label>
-                    <input type="text" required class="form-control @error('username') is-invalid @enderror" id="username" name="username"
-                        placeholder="Digite seu nome de usuário">
-                    @error('username')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
+            <h2 class="fw-bold mb-3 wix-madefor-display-hero-title">Entre com seu cadastro</h2>
+            <form method="POST" action="{{ route('login') }}">
+            @csrf
                 <div class="mb-4">
                     <label for="email" class="fw-bold mb-2 wix-madefor-display-hero-title">Email</label>
                     <input type="email" required class="form-control @error('email') is-invalid @enderror" id="email" name="email"
@@ -33,8 +23,7 @@
                 <div class="mb-4">
                     <label for="password" class="fw-bold mb-2 wix-madefor-display-hero-title">Senha</label>
                     <input type="password" required class="form-control @error('password') is-invalid @enderror" id="password" name="password"
-                        placeholder="Digite uma senha">
-                    <small class="text-muted">A senha deve ter pelo menos 8 caracteres</small>
+                        placeholder="Digite sua senha">
                     @error('password')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror

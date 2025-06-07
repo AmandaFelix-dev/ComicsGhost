@@ -32,4 +32,9 @@ class HQ extends Model
 
     // Caso precise de timestamps (created_at e updated_at)
     public $timestamps = true;  // Caso sua tabela tenha campos de timestamps (opcional)
+
+    public function favoritado_por()
+    {
+        return $this->belongsToMany(Cadastro::class, 'favoritos');
+    }
 }

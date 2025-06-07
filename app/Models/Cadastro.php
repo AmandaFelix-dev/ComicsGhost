@@ -2,16 +2,26 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Cadastro extends Model
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+class Cadastro extends Authenticatable
 {
-    protected $table = 'cadastro';
+    use Notifiable;
 
-    protected $fillable = [
-        'id',           
+    protected $table = 'cadastros';
+
+    protected $fillable = [   
         'username',       
         'email',    
-        'senha',       
+        'password',       
     ];
+    
+    protected $hidden = [
+        'password',
+    ];
+
+    public function favoritos()
+    {
+        return $this->belongsToMany(HQ::class, 'favoritos');
+    }
 }

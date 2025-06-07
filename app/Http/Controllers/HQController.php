@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\HQ;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HQController extends Controller
 {
@@ -136,5 +137,11 @@ class HQController extends Controller
 
         // Redireciona para a lista de HQs com uma mensagem de sucesso
         return redirect()->route('hqs.index')->with('success', 'HQ excluída com sucesso!');
+    }
+
+    public function favoritar($id){
+        $user = Auth::user();
+        $user->favoritos()->attach($id);
+        return back()->with('success', 'Item favoritado com sucesso!');
     }
 }
